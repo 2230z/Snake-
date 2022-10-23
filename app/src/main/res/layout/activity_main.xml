@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.snake.MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="320dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/snake" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints" >
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_height="120dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="60dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:textSize="28sp"
+            android:textColor="@color/pink"
+            android:background="@color/black"
+            android:text="@string/startButton"
+            />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

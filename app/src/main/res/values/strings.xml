@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">贪吃蛇大作战</string>
+
+    <string name="startButton">开始游戏</string>
+
+    <string name="scores">分数</string>
+    <string name="gameAgainButton">再玩一次</string>
+    <string name="gameOver">回到首页</string>
+</resources>
