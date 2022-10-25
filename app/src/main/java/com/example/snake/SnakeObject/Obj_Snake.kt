@@ -16,8 +16,7 @@ class Obj_Snake : GameModel {
 
     var FirstLength = 5//初始的长度
 
-    val maxX: Float = 54F * SnakeConfig.GAME_ROW_COUNT
-    val maxY: Float = 54F * SnakeConfig.GAME_COLUMN_COUNT
+
     /**
      * 移动方向
      *  1  向上
@@ -75,7 +74,8 @@ class Obj_Snake : GameModel {
      * 检查是否撞墙
      */
     fun isCrashWall(): Boolean {
-
+        val maxX: Float = SnakeConfig.GRID_WIDTH * SnakeConfig.GAME_COLUMN_COUNT
+        val maxY: Float = SnakeConfig.GRID_HEIGHT * SnakeConfig.GAME_ROW_COUNT
         val first: Food = snakeBodys.get(0)
         if(first.x < 0 || first.x > maxX || first.y < 0 || first.y > maxY ) return true
         return false

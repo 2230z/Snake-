@@ -11,17 +11,15 @@
     <com.example.snake.GridView
         android:id="@+id/background_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/pink"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
 
     <com.example.snake.SnakeGameView
         android:id="@+id/snake_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:layout_width="match_parent"
